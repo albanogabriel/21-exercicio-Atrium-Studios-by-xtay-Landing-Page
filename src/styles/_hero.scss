@@ -1,0 +1,79 @@
+@use 'variables';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url(../images/desktop-atrium-teste.png);
+    text-align: center;
+    background-size: cover;
+
+    &__content {
+        max-width: 640px;
+    
+        &__branding {
+            max-width: 320px;
+            margin: 0 auto;
+        }
+
+        h3 {
+            color: variables.$primaryText;
+            margin-top: 72px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            a {
+                color: variables.$orangeColor;
+            }
+
+            span {
+                color: variables.$primaryText;
+            }
+        }
+
+        &__combos {
+            display: flex;
+            justify-content: space-between;
+
+            &__combo {
+                width: calc(50% - 12px);
+                
+
+                img {
+                    max-height: 90px;
+                }
+
+                button {
+                    display: block;
+                    width: 100%;
+                    height: 60px;
+                    font-size: 18px;
+                    color: variables.$whiteColor;
+                    background-color: variables.$orangeColor;
+                    border: none;
+                    border-radius: 8px;
+                    margin-top: 0.8vw;
+                    margin-bottom: 8px;   
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: lighten(variables.$orangeColor, 4%);
+                    }
+                }
+
+            }
+        }
+
+        p {
+            margin-top: 30px;
+            
+        }
+
+
+    }
+
+    
+
+
+
+}
