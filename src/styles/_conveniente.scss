@@ -1,0 +1,52 @@
+@use 'variables';
+
+.conveniente {
+    padding-bottom: 40px;
+    background: linear-gradient(82.21deg, #53affb -1.14%, #D5F0FD 92.86%);
+    
+    &__item {
+        position: relative;
+
+        h2 {
+            color: variables.$whiteColor;
+            font-weight: 900;
+            padding-top: 32px;
+        }
+
+        p {
+            color: variables.$whiteColor;
+            max-width: 500px;
+            padding-bottom: 32px;
+        }
+
+        ul {
+            padding: 0;
+            font-size: 20px;
+
+            li {
+                color: variables.$whiteColor;
+            }
+        }
+
+        &__stores{
+            display: inline-flex;
+            flex-direction: column;
+            
+            img {
+                margin-bottom: 20px;
+            }
+
+            
+        }
+        
+        picture {
+            position: absolute;
+            left: 600px;
+            top: 150px;
+        }
+    }
+    
+    
+
+
+}

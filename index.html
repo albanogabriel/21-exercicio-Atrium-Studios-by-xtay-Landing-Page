@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atrium Studios by xtay</title>
     <link rel="stylesheet" href="dist/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <!-- ===================== SECTION HERO ======================= -->
     <section class="hero">
         <div class="hero__content">
             <h1 class="hero__content__branding">
-                <img src="./src/images/logos/atrium-logo-03.svg" alt="">
+                <img src="./dist/images/logos/atrium-logo-03.svg" alt="">
             </h1>
             <h3 class="title--small">
                 Aproveite o Passeio Pedra Branca!
@@ -25,19 +29,888 @@
 
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
-                    <img src="./src/images/combos/combo café.png" alt="combo café">
+                    <img src="./dist/images/combos/combo café.png" alt="combo café">
                     <button>Reserve Agora</button>
                     <!-- <span class="text--small">promoção a partir de R$ 259,00*</span> -->
                 </li>
                 <li class="hero__content__combos__combo">
-                    <img src="./src/images/combos/combo café.png" alt="combo café">
+                    <img src="./dist/images/combos/combo café.png" alt="combo café">
                     <button>Reserve Agora</button>
                     <!-- <span class="text--small">promoção a partir de R$ 259,00*</span> -->
                 </li>
             </ul>
             <p class="text--small">Oferta válida até o dia <b>29/05/2022</b>, consulture o <u>regulamento</u>*</p>
         </div>
-
     </section>
+
+    <!-- ===================== SECTION ATRAÇÕES ======================= -->
+    <section class="shows">
+        <h2 class="title--big">Conheça nossos flats!</h1>
+        
+        <nav class="shows__tabs">
+            <button data-tab-button="fpolis" class="shows__tabs__button shows__tabs__button--is-active">Em breve</button>
+            <button data-tab-button="sp" class="shows__tabs__button">Mais populares</button>
+            <button data-tab-button="ctb" class="shows__tabs__button">Mais no star+</button>
+        </nav>
+
+        <div class="shows__container">
+            <ul data-tab-id="fpolis" class="shows__list shows__list--is-active">
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel1" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel2" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel3" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel4" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel5" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel6" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel6" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel6" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+            </ul>
+        
+            <ul data-tab-id="sp" class="shows__list">
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel2" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/soho-studios-photos/1.1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/soho-studios-photos/1.2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/soho-studios-photos/1.3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel1" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+                
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel3" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel4" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel5" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel6" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel6" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel6" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+            </ul>
+    
+            <ul data-tab-id="ctb" class="shows__list">
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel1" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/princess-studios-photos/3.1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/princess-studios-photos/3.2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/princess-studios-photos/3.3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel2" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel3" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel4" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel5" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <div class="shows__list__item__card">
+                        <div id="carousel6" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./src/images/atrium-studios-photos/1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./src/images/atrium-studios-photos/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel6" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel6" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="icons--apartament">
+                            <i class='bx bx-bed' style='color:#7d7d7d'></i> 01 | <i class='bx bxs-shower'></i> 01 |<i class='bx bxs-car-garage' ></i> 01 
+                        </p>
+                        
+                        <h3 class="title--apartament">Atrium Studios by Xtay</h3>
+                        <p>
+                            <b>Cidade:</b> Palhoça
+                        </p>
+                        <p>
+                            <b>Bairro:</b> Pedra Branca
+                        </p>
+                        <button class="button-orange">Reserve agora!</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION É MAIS CONVENIENTE ALUGAR COMIGO ======================= -->
+    <section class="conveniente">
+       <div class="conveniente__item project_container">
+            <h2 class="title--big">É mais conveniente reservar comigo</h2>
+            <p>
+                Veja o que você encontra em todos os meus apartamentos. Gostou? Tudo o que precisar está disponível no meu app.
+            </p>
+            <ul>
+                <li>
+                    Check-in sem contato
+                </li>
+                <li>
+                    Check-in sem contato
+                </li>
+                <li>
+                    Check-in sem contato
+                </li>
+                <li>
+                    Check-in sem contato
+                </li>
+                <li>
+                    Check-in sem contato
+                </li>
+            </ul>
+            <div class="conveniente__item__stores">
+                <img src="./src/images/section-conveniente/google.jpg" alt="google store">
+                <img src="./src/images/section-conveniente/appstore.jpg" alt="apple store">
+            </div>
+
+            <picture>
+                <img src="./src/images/section-conveniente/phones.png" alt="telefone">
+            </picture>
+       </div>
+       
+    </section>
+
+     <!-- ===================== SECTION PROVA-SOCIAL ======================= -->
+
+     <section class="prova-social">
+            <div class="prova-social__items project_container">
+                <img src="./src/images/section-prova-social/design-sem-nome.jpg" alt="carinha design sem nome">
+                <aside>
+                    <h3>Oque dizem por aí</h3>
+                    <p>Nada melhor do que ler depoimentos de clientes reais para decidir sua estada, não é? Confira o que falam sobre mim na Booking e no Airbnb e reserve agora sua hospedagem comigo.</p>
+                    <img src="./src/images/section-prova-social/linha.png" alt="linha">
+                    <div class="cards-prova-social">
+                        <div class="cards-prova-social__item">
+                            <h3>Isabel Booking</h3>
+                            <p>Ótima localização, bem decorado, cama muito confortável, cozinha equipada com básico, perfeita para o preparo de refeições rápidas</p>
+                            <img src="./src/images/section-prova-social/estrelas.svg" alt="">
+                        </div>
+                        <div class="cards-prova-social__item">
+                            <h3>Isabel Booking</h3>
+                            <p>Ótima localização, bem decorado, cama muito confortável, cozinha equipada com básico, perfeita para o preparo de refeições rápidas</p>
+                            <img src="./src/images/section-prova-social/estrelas.svg" alt="">
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="prova-social__midia">
+                <h1 class="title--big">Mal dei as caras e já virei notícia!</h1>
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./src/images/section-prova-social/exame.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <p>Startup de tecnologia promete serviço de hotel e facilidade de Airbnb".</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./src/images/section-prova-social/exame.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <p>Startup de tecnologia promete serviço de hotel e facilidade de Airbnb".</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./src/images/section-prova-social/exame.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <p>Startup de tecnologia promete serviço de hotel e facilidade de Airbnb".</p>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+     </section>
+
+     <section class="news">
+        <div class="project_container">
+            <h3 class="title--big">Trago notícias e dicas para você</h3>
+            <div class="news__cards">
+                <div class="card" style="width: 18rem;">
+                    <div class="card__tags"> Institucional</div>
+                    <img src="./src/images/section-news/osasco.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Xtay apresenta flagship em SP.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card__tags"> Institucional</div>
+                    <img src="./src/images/section-news/osasco.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Xtay apresenta flagship em SP.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card__tags"> Institucional</div>
+                    <img src="./src/images/section-news/osasco.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Xtay apresenta flagship em SP.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card__tags"> Institucional</div>
+                    <img src="./src/images/section-news/osasco.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Xtay apresenta flagship em SP.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card__tags"> Institucional</div>
+                    <img src="./src/images/section-news/osasco.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Xtay apresenta flagship em SP.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card__tags"> Institucional</div>
+                    <img src="./src/images/section-news/osasco.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Xtay apresenta flagship em SP.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card__tags"> Institucional</div>
+                    <img src="./src/images/section-news/osasco.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Xtay apresenta flagship em SP.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card__tags"> Institucional</div>
+                    <img src="./src/images/section-news/osasco.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Xtay apresenta flagship em SP.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <button class="button-news">Ver mais posts</button>
+
+        
+
+
+     </section>
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="./src/main.js"></script>
 </body>
 </html>
