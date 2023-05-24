@@ -7,6 +7,15 @@
     &__item {
         position: relative;
 
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+
         h2 {
             color: variables.$whiteColor;
             font-weight: 900;
@@ -43,6 +52,14 @@
             position: absolute;
             left: 600px;
             top: 150px;
+
+            @media (max-width: 1024px) {
+                display: none;
+            }
+    
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
     }
     
