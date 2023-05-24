@@ -1,10 +1,13 @@
 @use 'reset';
 @use 'variables';
+@use 'header';
 @use 'hero';
 @use 'shows';
 @use 'conveniente';
 @use 'prova-social';
 @use 'news';
+@use 'faq';
+@use 'footer';
 
 
 @font-face {
@@ -55,8 +58,11 @@
     @include title(36px);
 }
 
+
 .button-orange{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
     width: 100%;
     height: 50px;
@@ -81,3 +87,41 @@
     margin: 0 auto;
 }
 
+.button-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: 900;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+    text-decoration: none;
+    padding: 12px 20px;
+    letter-spacing: 1px;
+
+    &--orange {
+        color: variables.$whiteColor;
+        background-color: variables.$orangeColor;
+        border: 1.5px solid variables.$orangeColor;
+        letter-spacing: 1px;
+
+        &:hover {
+            background-color: lighten(variables.$orangeColor, 4%);
+        }
+    }
+
+    &--ghost {
+        color: variables.$whiteColor;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 1.5px solid variables.$whiteColor;
+        letter-spacing: 1px;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+
+}
